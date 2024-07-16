@@ -117,10 +117,8 @@ public class ExemploArrayList {
 		}	
 		
 		
-		System.out.println(biblioteca);
-		Collections.sort(biblioteca);
-		System.out.println(biblioteca);
-		
+		System.out.println("n\n Sem Ordenação"+biblioteca);
+				
 		ordenarObjeto(biblioteca);
 		
 		scan.close();
@@ -135,9 +133,17 @@ public class ExemploArrayList {
 		 * 
 		 */
 	public static void ordenarObjeto(List<Livros>biblioteca) {
+		
+		//Comparable
+		
+		Collections.sort(biblioteca);
+		System.out.println("\n\n Ordenação por ordem alfabetica"+biblioteca);
+		
+		//Comparator
+		
 		CompararNumeroPaginas compararNumeroPaginas = new CompararNumeroPaginas();
 		Collections.sort(biblioteca, compararNumeroPaginas);
-		System.out.println("Ordenação por pagina\n\n"+biblioteca);
+		System.out.println("\n\n\n Ordenação por pagina"+biblioteca);
 	}
 
 }

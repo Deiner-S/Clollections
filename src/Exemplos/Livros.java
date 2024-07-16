@@ -78,14 +78,23 @@ public class Livros implements Comparable<Livros> {
 	
 	
 	public String toString() {
-		return "Livro{" +'\n'+
-				"nome = " + nome + '\n'+
-				"autor = " + autor + '\n'+
-				"editora = " + editora + '\n'+
-				"anoEdicao = " + anoEdicao + '\n'+
-				"numeroPaginas = " + numeroPaginas + '\n'+
+		return "Livros{" +'\n'+
+				"nome = " + nome + " - "+
+				"autor = " + autor + " - "+
+				"editora = " + editora + " - "+
+				"anoEdicao = " + anoEdicao + " - "+
+				"numeroPaginas = " + numeroPaginas + " - "+
 				'}';
 	}
+//	public String toString() {
+//		return "Livro{" +'\n'+
+//				"nome = " + nome + '\n'+
+//				"autor = " + autor + '\n'+
+//				"editora = " + editora + '\n'+
+//				"anoEdicao = " + anoEdicao + '\n'+
+//				"numeroPaginas = " + numeroPaginas + '\n'+
+//				'}';
+//	}
 	/**
 	 * Usado para comparação entre objetos e verificar se o mesmo é igual 
 	 * @param livro
