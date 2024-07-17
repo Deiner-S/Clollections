@@ -11,6 +11,7 @@ public class ExemplosLinkedList {
 	}
 	
 	
+	@SuppressWarnings("unlikely-arg-type")
 	public static void exemploLinkedList() {
 		
 		List<Livros> biblioteca = new LinkedList<>();
@@ -33,7 +34,10 @@ public class ExemplosLinkedList {
 		
 		biblioteca.remove(2);
 		System.out.println(biblioteca);
-		biblioteca.contains(); // retorna um boolean 
+		
+			// retorna um boolean
+			System.out.print(biblioteca.contains(livro2));
+		
 
 	}
 
