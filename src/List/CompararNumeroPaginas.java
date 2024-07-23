@@ -1,4 +1,4 @@
-package Exemplos;
+package List;
 import java.util.Comparator;
 
 public class CompararNumeroPaginas implements Comparator<Livros>{

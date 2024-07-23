@@ -1,4 +1,4 @@
-package Exemplos;
+package Queue;
 import java.util.Queue;
 import java.util.Deque;
 import java.util.ArrayDeque;
@@ -51,6 +51,10 @@ public class ExemploArrayDeque {
 		System.out.println("Get first element using peekFirst: "+ deque1.peekFirst());
 		System.out.println("Get last element using peekLast: "+ deque1.peekLast());
 		
+		
+	
+		
+	
 	}
 	
 	public static void RemoveFila() {
@@ -94,7 +98,7 @@ public class ExemploArrayDeque {
 		
 		
 		
-		deque1.poll(); //remove primeiro da fila
+		deque1.poll();            //remove primeiro da fila
 		deque1.pollFirst();
 		deque1.pollLast();		
 		System.out.println("\n\npoll/pollFirst/Last\nElementos em ArayDeque: " + deque1);
@@ -121,8 +125,6 @@ public class ExemploArrayDeque {
 		
 		
 		System.out.println("\n\nElementos variavel valor: " + valor);
-		
-		
 		
 		
 	}

@@ -1,5 +1,16 @@
-package Exemplos;
+package List;
 
+import java.util.Objects;
+
+/**
+ * 
+ */
+/**
+ * 
+ */
+/**
+ * 
+ */
 public class Livros implements Comparable<Livros> {
 	
 	private String nome;
@@ -86,15 +97,7 @@ public class Livros implements Comparable<Livros> {
 				"numeroPaginas = " + numeroPaginas + " - "+
 				'}';
 	}
-//	public String toString() {
-//		return "Livro{" +'\n'+
-//				"nome = " + nome + '\n'+
-//				"autor = " + autor + '\n'+
-//				"editora = " + editora + '\n'+
-//				"anoEdicao = " + anoEdicao + '\n'+
-//				"numeroPaginas = " + numeroPaginas + '\n'+
-//				'}';
-//	}
+
 	/**
 	 * Usado para comparação entre objetos e verificar se o mesmo é igual 
 	 * @param livro
@@ -106,5 +109,33 @@ public class Livros implements Comparable<Livros> {
 		// TODO Auto-generated method stub
 		return this.nome.compareTo(livro.getNome());
 	}
+
+	//ALT+SHIFT+S --> H
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(anoEdicao, autor, editora, nome, numeroPaginas);
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Livros other = (Livros) obj;
+		
+		return Objects.equals(anoEdicao, other.anoEdicao) && Objects.equals(autor, other.autor)
+				&& Objects.equals(editora, other.editora) && Objects.equals(nome, other.nome)
+				&& numeroPaginas == other.numeroPaginas;
+	}
+	
+	
+	
+	
+	
 
 }

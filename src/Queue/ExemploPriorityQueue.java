@@ -1,4 +1,4 @@
-package Exemplos;
+package Queue;
 
 import java.util.Queue;
 import java.util.PriorityQueue;
